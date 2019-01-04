@@ -4,7 +4,6 @@ public class MemberRegistModel {
 	private String m_email;
 	private String m_name;
 	private String m_password;
-	private String m_active_number;
 	
 	public MemberRegistModel() {
 		
@@ -32,14 +31,6 @@ public class MemberRegistModel {
 
 	public void setM_password(String m_password) {
 		this.m_password = m_password;
-	}
-
-	public String getM_active_number() {
-		return m_active_number;
-	}
-
-	public void setM_active_number(String m_active_number) {
-		this.m_active_number = m_active_number;
 	}
 	
 }

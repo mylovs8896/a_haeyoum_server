@@ -28,7 +28,6 @@ public class MemberController {
 		System.out.printf("(POST) 이메일 -> %s\n", member.getM_email());
 		System.out.printf("(POST) 이름 -> %s\n", member.getM_name());
 		System.out.printf("(POST) 비밀번호 -> %s\n", member.getM_password());
-		System.out.printf("(POST) 인증번호 -> %s\n", member.getM_active_number());
 		
 		Map<String, Integer> json = new HashMap<>();
 		
@@ -48,7 +47,6 @@ public class MemberController {
 		member.setM_email("mtmtsm@naver.com");
 		member.setM_name("정우성");
 		member.setM_password("987654321");
-		member.setM_active_number("I love Sunmin");
 		
 		String strJson = gson.toJson(member);
 		return member;
